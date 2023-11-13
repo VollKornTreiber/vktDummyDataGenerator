@@ -9,8 +9,8 @@
     </li>
     <li>As import in other Python scripts:
         <ul>
-            <li>Import "vktDummyDataGenerator.py" into the script</li>
-            <li>Make a new instance of the class <code>vktDummyDataGen</code> and use <code>(instance name).out()</code>, to call the output array, ready to be parsed.</li>
+            <li><code>Import vktDummyDataGenerator </code> into the script</li>
+            <li>Make a new instance of the class <code>vktDummyDataGen</code> and use <code>[instance name]()</code>, to call the output array, ready to be parsed.</li>
         </ul>
     </li>
 </ul>

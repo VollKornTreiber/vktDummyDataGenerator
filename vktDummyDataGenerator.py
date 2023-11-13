@@ -1,9 +1,10 @@
-#vktDummyDataGenerator - A little Python script that generates random dummy-databases. Works either as standalone or can be imported into other projects.
+#vktDummyDataGenerator - A little Python script that generates random dummy-databases as .txt files. 
+#Works either as standalone or can be imported into other projects.
 #Created by VollKornTreiber - 2023
 
 import random
 
-VER = "1.1"
+VER = "1.12"
 outFileName = "DataOutput.txt"
 
 class vktDummyDataGen:
@@ -20,10 +21,11 @@ class vktDummyDataGen:
             self.action(rows, cols, minVal, maxVal, fileOut)
 
     def __call__(self):
-        self.out()
+        return(self.data)
 
     def action(self, rows, cols, minVal, maxVal, fileOut = False):
 
+        print("DummyDataGen is processing. Please wait...")
         if rows > 1:
             for i in range(rows):
                 coldata = []
@@ -40,7 +42,6 @@ class vktDummyDataGen:
             outfile.write(str(self.data))
             outfile.close()
 
-        self.out()
 
     def wizard(self, fileOut):
         rows = ""
@@ -69,7 +70,6 @@ class vktDummyDataGen:
         minVal = int(minVal)
         maxVal = int(maxVal)
 
-        print("Processing. Don't close the window...")
         self.action(rows, cols, minVal, maxVal, fileOut)
         print("Finished! See "+outFileName+" for the output!")
         input("Press any button to end...")
