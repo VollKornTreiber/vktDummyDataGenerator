@@ -3,6 +3,8 @@
 <p>A little Python script that generates random dummy-databases as .txt files. Works either as standalone or can be imported into other projects.<p>
 <p>As for the current version, only integers can be generated.</p>
 
+<img src="screen01.png" alt="Terminal Screenhot" width="auto" />
+
 <h2>Usage</h2>
 <ul>
     <li>As standalone:
